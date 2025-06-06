@@ -1,0 +1,7 @@
+Metric,Control Group,Treatment Group,Notes
+Total Users,147202,147276,
+Conversions,17723,17514,
+Conversion Rate (%),12.04,11.89,(Conversions / Users) * 100
+Z-Statistic,1.2369,—,
+P-Value,0.2161,—,"> 0.05, not statistically significant"
+Conclusion,No difference,—,No statistically significant improvement
