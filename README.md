@@ -1,91 +1,76 @@
 A/B Testing Project: Landing Page Optimization
 
-
-This project demonstrates A/B testing techniques to evaluate the effectiveness of a new landing page in increasing conversion rates. It combines statistical analysis using Python, data visualization in Tableau.showcasing a comprehensive approach to data-driven decision-making in marketing.
-
-
+This project demonstrates A/B testing techniques to evaluate the effectiveness of a new landing page in increasing conversion rates. It combines statistical analysis using Python and data visualization in Tableau, showcasing a comprehensive approach to data-driven decision-making in marketing.
 
 Project Objective
+
 To determine whether a new landing page design leads to a higher conversion rate compared to the existing page using A/B testing methodology.
 
+Problem Statement
 
- Problem Statement
-A company is considering replacing its existing landing page with a new version. Before rollout, they conducted an A/B test:
+A company is considering replacing its existing landing page with a new version. Before the rollout, they conducted an A/B test:
 
 Control Group: Old landing page
-
 Treatment Group: New landing page
+Goal: Measure whether the new page significantly improves conversion rates.
 
-Goal: Measure if the new page significantly increases conversions.
+Methodology
 
-
- Methodology
 Data Collection
 
-
 Source: Kaggle dataset
-Fields: id, time, con-treat, page, converted
+
+Fields: id, time, con_treat, page, converted
 
 Data Cleaning
 
-Removed inconsistencies (e.g., users in control but saw treatment page)
+Removed inconsistencies (e.g., users in the control group who saw the treatment page)
 
-Ensured balanced test and control groups
+Ensured a balanced distribution between test and control groups
 
 Exploratory Data Analysis
 
-Checked conversion distribution
+Checked overall conversion rate distributions
 
-Visualized group-wise performance
+Visualized conversion performance by group
 
 Statistical Testing
 
-Z-Test for proportions using statsmodels
+Performed Z-Test for Proportions using statsmodels
 
-Tested null hypothesis: Conversion rates are equal
+Null Hypothesis: Conversion rates are equal between the two groups
+
+Alternative Hypothesis: Conversion rates differ
 
 Visualization
 
-Created interactive Tableau dashboard
+Created an interactive Tableau dashboard
 
-Summary table, bar chart, and trend line comparisons
+Included summary table, bar chart (conversion rates), and trend line over time
 
- Key Results
-Metric	Control Group	Treatment Group
-Conversion Rate	0.120%	0.118%
-Z-Statistic	1.24	—
-P-Value	0.2161	—
-Result	Not Significant	—
+Interpretation: With a p-value of 0.2161 (above the 0.05 threshold), we fail to reject the null hypothesis. The new landing page does not show a statistically significant improvement in conversions.
 
-Interpretation: With a p-value of 0.2161 (above the 0.05 threshold), we fail to reject the null hypothesis. There is no significant improvement in conversion rate with the new landing page.
+Tools and Technologies Used
 
-
-
- Tools & Technologies
 Python: pandas, statsmodels, scipy
+Tableau: Used for visualizing A/B test results
 
-Tableau: For visualizing A/B testing outcomes
+Tableau Dashboard Overview
 
-
-
- Tableau Dashboard
- Contains:
+The Tableau dashboard includes:
 
 Conversion rate by group (Bar chart)
 
-Statistical summary (Z-score, p-value)
+Z-score, P-value, and statistical result (Summary table)
 
 Conversion trends over time (Line chart)
 
 
+Conclusion and Recommendation
 
- Conclusion
-The new landing page does not lead to a statistically significant improvement in conversion rates.
+The A/B test results show no statistically significant difference in conversion rates between the old and new landing pages.
 
-Recommendation: Do not deploy the new landing page based on current test results.
-
-
-
+Recommendation: Based on the current results, the company should not deploy the new landing page.
 
 
  Connect with Me
