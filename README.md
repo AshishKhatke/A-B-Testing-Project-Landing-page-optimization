@@ -4,7 +4,7 @@ This project demonstrates A/B testing techniques to evaluate the effectiveness o
 Project Objective
 To determine whether a new landing page design leads to a higher conversion rate compared to the existing page using A/B testing methodology.
 
-🔍 Problem Statement
+ Problem Statement
 A company is considering replacing its existing landing page with a new version. Before rollout, they conducted an A/B test:
 
 Control Group: Old landing page
@@ -13,7 +13,7 @@ Treatment Group: New landing page
 
 Goal: Measure if the new page significantly increases conversions.
 
-🧠 Methodology
+ Methodology
 Data Collection
 
 Source: Kaggle dataset
@@ -43,7 +43,7 @@ Created interactive Tableau dashboard
 
 Summary table, bar chart, and trend line comparisons
 
-📈 Key Results
+ Key Results
 Metric	Control Group	Treatment Group
 Conversion Rate	0.120%	0.118%
 Z-Statistic	1.24	—
@@ -52,13 +52,13 @@ Result	Not Significant	—
 
 Interpretation: With a p-value of 0.2161 (above the 0.05 threshold), we fail to reject the null hypothesis. There is no significant improvement in conversion rate with the new landing page.
 
-🛠️ Tools & Technologies
+ Tools & Technologies
 Python: pandas, statsmodels, scipy
 
 Tableau: For visualizing A/B testing outcomes
 
-📊 Tableau Dashboard
-📍 Contains:
+ Tableau Dashboard
+ Contains:
 
 Conversion rate by group (Bar chart)
 
@@ -66,12 +66,12 @@ Statistical summary (Z-score, p-value)
 
 Conversion trends over time (Line chart)
 
-✅ Conclusion
+ Conclusion
 The new landing page does not lead to a statistically significant improvement in conversion rates.
 
 Recommendation: Do not deploy the new landing page based on current test results.
 
-🔗 Connect with Me
+ Connect with Me
 LinkedIn: www.linkedin.com/in/ashishkhatke
 
 GitHub: https://github.com/AshishKhatke
